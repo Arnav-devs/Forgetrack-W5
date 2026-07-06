@@ -7,107 +7,107 @@
     <title>URL Shortener</title>
 
     <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, Helvetica, sans-serif;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        body{
-            min-height:100vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            background:linear-gradient(135deg,#6a11cb,#2575fc);
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Sunset/Fire gradient */
+            background: linear-gradient(135deg, #ff9d2e, #c0392b);
         }
 
-        .container{
-            width:90%;
-            max-width:650px;
-            background:#fff;
-            padding:35px;
-            border-radius:15px;
-            text-align:center;
-            box-shadow:0 15px 30px rgba(0,0,0,.25);
+        .container {
+            width: 90%;
+            max-width: 650px;
+            background: #fff;
+            padding: 35px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 15px 30px rgba(150, 40, 27, 0.3);
         }
 
-        h1{
-            color:#333;
-            margin-bottom:25px;
+        h1 {
+            color: #b33020;
+            margin-bottom: 25px;
         }
 
-        form{
-            display:flex;
-            flex-direction:column;
-            gap:18px;
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
         }
 
-        input{
-            padding:14px;
-            font-size:16px;
-            border:2px solid #ddd;
-            border-radius:8px;
-            outline:none;
-            transition:.3s;
+        input {
+            padding: 14px;
+            font-size: 16px;
+            border: 2px solid #f5c6cb;
+            border-radius: 8px;
+            outline: none;
+            transition: .3s;
         }
 
-        input:focus{
-            border-color:#2575fc;
+        input:focus {
+            border-color: #d35400;
         }
 
-        button{
-            padding:14px;
-            border:none;
-            border-radius:8px;
-            background:#2575fc;
-            color:white;
-            font-size:16px;
-            cursor:pointer;
-            transition:.3s;
+        button {
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: #d35400;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: .3s;
         }
 
-        button:hover{
-            background:#0d5be1;
+        button:hover {
+            background: #c0392b;
         }
 
-        .error{
-            color:red;
-            margin-top:20px;
-            font-weight:bold;
+        .error {
+            color: #c0392b;
+            margin-top: 20px;
+            font-weight: bold;
         }
 
-        .success{
-            margin-top:25px;
+        .success {
+            margin-top: 25px;
         }
 
-        .success h3{
-            color:#2575fc;
-            margin-bottom:10px;
+        .success h3 {
+            color: #d35400;
+            margin-bottom: 10px;
         }
 
-        .success a{
-            color:#6a11cb;
-            text-decoration:none;
-            font-weight:bold;
-            word-break:break-all;
+        .success a {
+            color: #b33020;
+            text-decoration: none;
+            font-weight: bold;
+            word-break: break-all;
         }
 
-        .dashboard{
-            display:inline-block;
-            margin-top:30px;
-            padding:12px 22px;
-            background:#6a11cb;
-            color:white;
-            text-decoration:none;
-            border-radius:8px;
-            transition:.3s;
+        .dashboard {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 22px;
+            background: #c0392b;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: .3s;
         }
 
-        .dashboard:hover{
-            background:#5710a7;
+        .dashboard:hover {
+            background: #962a20;
         }
-
     </style>
 </head>
 
@@ -119,10 +119,7 @@
 
         <form action="/shorten" method="POST">
 
-            <input
-                type="text"
-                name="url"
-                placeholder="Enter your URL here">
+            <input type="text" name="url" placeholder="Enter your URL here">
 
             <button type="submit">
                 Generate Short Link
